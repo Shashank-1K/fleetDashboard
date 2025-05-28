@@ -1,0 +1,31 @@
+:root {
+  --primary-color: #4f46e5;
+  --primary-color-rgb: 79, 70, 229; /* RGB values for primary color */
+  --secondary-color: #818cf8;
+  --background-color: #f9fafb;
+  --card-background: #ffffff;
+  --text-color: #1f2937;
+  --border-color: #e5e7eb;
+  --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  
+  --card-blue: #3b82f6;
+  --card-green: #10b981;
+  --card-yellow: #f59e0b;
+  --card-red: #ef4444;
+}
+
+.dark-theme {
+  --primary-color: #6366f1;
+  --primary-color-rgb: 99, 102, 241; /* RGB values for primary color in dark mode */
+  --secondary-color: #a5b4fc;
+  --background-color: #111827;
+  --card-background: #1f2937;
+  --text-color: #f9fafb;
+  --border-color: #374151;
+  --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2), 0 2px 4px -1px rgba(0, 0, 0, 0.1);
+  
+  --card-blue: #3b82f6;
+  --card-green: #10b981;
+  --card-yellow: #f59e0b;
+  --card-red: #ef4444;
+}

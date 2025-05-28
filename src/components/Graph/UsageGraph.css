@@ -1,0 +1,37 @@
+.usage-graph-container {
+  background-color: var(--card-background);
+  border-radius: 0.5rem;
+  box-shadow: var(--shadow);
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  overflow: hidden;
+}
+
+.no-data {
+  text-align: center;
+  padding: 2rem;
+  color: var(--text-color);
+  background-color: var(--card-background);
+  border-radius: 0.5rem;
+  box-shadow: var(--shadow);
+}
+
+/* Ensure proper rendering for all chart types */
+.recharts-wrapper {
+  margin: 0 auto;
+}
+
+.recharts-polar-angle-axis-tick-value,
+.recharts-radial-bar-label,
+.recharts-legend-item-text {
+  fill: var(--text-color);
+}
+
+.recharts-polar-grid-concentric-polygon,
+.recharts-polar-grid-concentric-circle {
+  stroke: var(--border-color);
+}
+
+.recharts-legend-wrapper {
+  color: var(--text-color) !important;
+}

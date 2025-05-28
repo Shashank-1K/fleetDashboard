@@ -1,0 +1,41 @@
+.chart-description {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.chart-info {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  background-color: rgba(var(--primary-color-rgb), 0.1);
+  border-left: 4px solid var(--primary-color);
+  padding: 1rem;
+  border-radius: 0.25rem;
+}
+
+.info-icon {
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+.info-text {
+  flex: 1;
+}
+
+.info-title {
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+  color: var(--text-color);
+}
+
+.info-description {
+  color: var(--text-color);
+  margin-bottom: 0.25rem;
+  font-size: 0.9rem;
+}
+
+.info-use-case {
+  color: var(--text-color);
+  font-size: 0.9rem;
+  font-style: italic;
+}
