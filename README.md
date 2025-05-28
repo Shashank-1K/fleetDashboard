@@ -63,13 +63,14 @@ A **responsive dashboard** for monitoring vehicle fleet status and usage, built 
    ```bash
    npm run server
 
-   This starts json-server at http://localhost:3001 serving mock fleet data from server/db.json.
+  This starts json-server at http://localhost:3001 serving mock fleet data from server/db.json.
 
 4. In a new terminal, start the React development server:
 
    ```bash
    npm start
-   The app will be available at http://localhost:3000
+   
+  The app will be available at http://localhost:3000
 
 
 Backend Setup
