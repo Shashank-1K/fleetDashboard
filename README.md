@@ -1,70 +1,82 @@
-# Getting Started with Create React App
+# Fleet Overview Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A **responsive dashboard** for monitoring vehicle fleet status and usage, built with **React.js** and integrated with a mock backend API.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- Overview cards displaying real-time fleet statistics fetched from backend:
+  - Total Vehicles
+  - Vehicles in Use
+  - Vehicles Idle
+  - Vehicles Under Maintenance
+- Interactive vehicle usage graph with multiple visualization options:
+  - Line Chart with Gradient Fill (Smooth Trend)
+  - Area Chart (Emphasizing Volume)
+  - Bar Chart (Vertical/Horizontal)
+  - Polar Area Chart (Circular Representation)
+  - Radial Bar Chart (Circular Progress)
+  - Combo Chart (Line + Bar)
+- Selectable time ranges for vehicle usage data (7, 15, 30 days)
+- Dark/light theme toggle for better user experience
+- Responsive design optimized for desktop and mobile devices
+- Loading spinners and error handling during data fetch
+- Data is fetched dynamically from a mock backend service
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Tech Stack
 
-### `npm test`
+- **React.js** – UI development
+- **Recharts** – Data visualization library
+- **Axios** – HTTP client for API calls
+- **JSON Server** – Mock backend API server
+- **CSS (with variables)** – Styling and theming
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## Setup Instructions
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Prerequisites
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Node.js (v14 or higher recommended)
+- npm (comes with Node.js) or yarn
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+### Installation
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. Clone the repository:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   ```bash
+   git clone https://github.com/yourusername/fleetDashboard.git
+   cd fleetDashboard
+   
+2. Install dependencies:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   ```bash
+   npm install
+   
+3. Start the mock API server:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+   ```bash
+   npm run server
 
-## Learn More
+   This starts json-server at http://localhost:3001 serving mock fleet data from server/db.json.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+4. In a new terminal, start the React development server:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+   ```bash
+   npm start
+   The app will be available at http://localhost:3000
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Backend Setup
+  The project uses JSON Server to simulate a backend API.
+  
+  Mock data is stored in server/db.json.
+  
+  To update or extend the backend data, simply edit this JSON file.
+  
+  The frontend fetches data from http://localhost:3001.
